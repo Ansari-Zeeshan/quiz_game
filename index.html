@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz Game</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+	</style>
+</head>
+<body>
+	
+<div class="main-div">
+	<div class="inner-div">
+		<h2 class="question">Question Comes Here!</h2>
+			<ul>
+				<li>
+					<input type="radio" name="answer" id="ans1">
+					<label for="ans1" id="option1">Answer Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="ans2">
+					<label for="ans2" id="option2">Answer Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="ans3">
+					<label for="ans3" id="option3">Answer Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="ans4">
+					<label for="ans4" id="option4">Answer Option</label>
+				</li>
+			</ul>
+			<div class="d-flex">
+			 <div class="btn-div">	
+			   <button id="submit">Submit</button>
+			   <button id="skip">Skip</button>
+			 </div>  
+			 <h4></h4>
+			</div>
+            <audio src="Song/nextq.mp3"></audio>
+			<div class="d-flex2">
+			 <div class="btn-div">	
+			   <button id="goback" class="hide">Back</button>
+			 </div> 
+			 <div class="timeon">
+			   	<h3>Times Remaining: </h3><span class="timer">60</span>			 	
+			 </div>
+			</div>
+			<div id="showScore" class="scoreArea">
+				
+			</div>
+		</h2>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

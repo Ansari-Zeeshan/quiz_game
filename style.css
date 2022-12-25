@@ -1,0 +1,189 @@
+*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+			font-weight: 300;
+		}
+		html
+		{
+			font-size: 62.5%;
+		}
+		.main-div
+		{
+			width: 100vw;
+			height: 100vh;
+			min-height: 100vh;
+			background: hsl(206, 92%, 94%);
+			display: grid;
+			place-items: center;
+		}
+		.inner-div
+		{
+			width: 40vw;
+			background: #fff;
+			padding: 3rem 5rem;
+			border-radius: 1rem;
+			box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+			transition: all 0.3s linear;
+		}
+		.inner-div.active
+		{
+            animation: fade 0.5s ease forwards;
+		}
+		@keyframes fade {
+			0%
+			{
+                opacity: 0;
+			}
+			100%
+			{  
+                opacity: 1
+			}
+		}
+		.inner-div h2
+		{
+			font-size: 3.5rem;
+			font-weight: 400;
+			margin: 1rem 0 4rem 0;
+		}
+		.inner-div li
+		{
+			font-size: 2rem;
+			margin-top: 1.5rem;
+			list-style: none;
+		}
+		input
+		{
+			cursor: pointer;
+		}
+		.d-flex,.d-flex2
+		{
+            display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.d-flex2 .timeon
+		{
+			margin-top: 4rem;
+		}
+		.d-flex2 h3,.d-flex2 span
+		{ 
+            font-size: 2.5rem;
+            font-weight: 500;
+            display: inline;
+		}
+		#submit,#skip,.btn,#goback
+		{
+            padding: 1rem 2rem;
+            outline: none;
+            font-size: 2rem;
+            font-weight: 400;
+            /* display: inline; */
+            text-align: center;
+            margin-top: 4rem;
+            border: none;
+            text-transform: uppercase;
+            color: #fff;
+            background:#74b9ff; 
+            transition: all 0.3s ease;
+            cursor: pointer;
+		}
+		
+		.btn
+		{
+			display: block;
+			margin: auto;
+			margin-top: 4rem;
+		}
+		#submit
+		{
+			margin-right: 1.5rem;
+		}
+		#submit.hide,
+		#skip.hide,.question.hide,#goback.hide
+		{
+			display: none;
+		}
+		#submit:hover,.btn:hover
+		{
+			background-color: #0984e3;
+		}
+		#showScore
+		{
+			background: #dfe6e9;
+			padding: 3rem 4rem;
+			box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4); 
+			animation: fade 0.5s ease forwards;
+		}
+		@keyframes fade {
+			0%
+			{
+				opacity: 0;
+				margin-top: -4.5rem;
+			}
+			100%
+			{
+				opacity: 1;
+				margin-top: 0;
+			}
+		}
+		#showScore h3
+		{
+			font-size: 3rem;
+			text-align: center;
+		}
+		.timeon h3
+		{
+			font-size: 2.5rem;
+			display: inline;
+		}
+		.timeon span
+		{
+			font-size: 2.5rem;
+			display: inline;
+		}
+		#showScore btn
+		{
+            margin-top:2rem;
+            background: #55efc4;
+            color: #2d3436;
+		}
+		#showScore span
+		{
+			color: red;
+			display: block;
+			text-align: center;
+			font-size: 3rem;
+			font-weight: 500;
+			margin-bottom: 2rem;
+		}
+		#showScore btn:hover
+		{
+            background: #00b894;
+            color: #fff;
+		}
+		.scoreArea
+		{
+			display: none;
+		}
+		@keyframes fade {
+			0%
+			{
+				opacity: 0;
+			}
+			100%
+			{
+				opacity: 1;
+			}
+		}
+		ul.hide
+		{
+			display: none;
+		}
+		.inner-div h4
+		{
+            font-size: 2.5rem;
+            margin-top: 4rem;
+		}
